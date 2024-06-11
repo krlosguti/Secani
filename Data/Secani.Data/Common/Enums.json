@@ -1,0 +1,117 @@
+[
+    {
+        "name": "EstadoNNAId",
+        "values": [
+            {"key": 10, "value": "Value 1"},
+            {"key": 20, "value": "Value 2"}
+        ]
+    },
+    {
+        "name": "ResidenciaCategoria",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "ResidenciaArea",
+        "values": [
+            {"key": "10", "value": "Rural"},
+            {"key": "20", "value": "Urbana"}
+        ]
+    },
+    {
+        "name": "EstratoId",
+        "values": [
+            {"key": "Key 10", "value": "2"},
+            {"key": "Key 20", "value": "3"},
+			{"key": "Key 30", "value": "4"},
+            {"key": "Key 40", "value": "5"},
+			{"key": "Key 50", "value": "6"},
+        ]
+    },
+	{
+        "name": "TipoIdentificacionId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "SexoId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "TipoRegimenSSId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "GrupoPoblacionId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "EtniaId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "EstadoIngresoEstrategiaId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "OrigenReporteId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "MotivoNoDiagnosticoId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "CategoriaAlertaId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "SubcategoriaAlertaId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "TrasladosTipoAccionLegalId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+	{
+        "name": "TratamientoTiempoInasistenciaUnidadMedidaId",
+        "values": [
+            {"key": "10", "value": ""},
+            {"key": "20", "value": ""}
+        ]
+    },
+]
