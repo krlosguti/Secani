@@ -52,21 +52,18 @@ namespace Secani.Data.Context
 
             foreach (var entry in entries)
             {
-                if (entry.State == EntityState.Modified || entry.State == EntityState.Added)
+                if (entry.State == EntityState.Added)
                 {
                     var entity = entry.Entity;
+                    entity.DateCreated = DateTime.UtcNow;
+                    entity.CreatedByUserId = 1;
+                }
 
-                    if (entry.State == EntityState.Added)
-                    {
-                        entity.DateCreated = DateTime.UtcNow;
-                        entity.CreatedByUserId = 1;
-                    }
-
-                    if (entry.State == EntityState.Deleted)
-                    {
-                        entity.DateUpdated = DateTime.UtcNow;
-                        entity.UpdatedByUserId = 2;
-                    }
+                if (entry.State == EntityState.Modified)
+                {
+                    var entity = entry.Entity;
+                    entity.DateUpdated = DateTime.UtcNow;
+                    entity.UpdatedByUserId = 2;
                 }
             }
 
