@@ -1,8 +1,9 @@
-﻿using Secani.Data.Common;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
 
 namespace Secani.Data.Models
 {
-    public class Seguimiento : BaseEntity
+    public class Seguimiento : _BaseEntity
     {
         public long NNAId { get; set; }
         public DateTime FechaSeguimiento { get; set; }
@@ -14,5 +15,13 @@ namespace Secani.Data.Models
         public DateTime FechaSolicitud { get; set; }
         public bool TieneDiagnosticos { get; set; }
         public string ObservacionesSolicitante { get; set; }
+    }
+
+    public class SeguimientoConfiguration : IEntityTypeConfiguration<Seguimiento>
+    {
+        public void Configure(EntityTypeBuilder<Seguimiento> builder)
+        {
+
+        }
     }
 }

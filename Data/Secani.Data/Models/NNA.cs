@@ -1,8 +1,9 @@
-﻿using Secani.Data.Common;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
 
 namespace Secani.Data.Models
 {
-    public class NNA : BaseEntity
+    public class NNA : _BaseEntity
     {
         public int estadoId { get; set; }
         public int ResidenciaActualCategoriaId { get; set; }
@@ -27,6 +28,7 @@ namespace Secani.Data.Models
         public int TipoIdentificacionId { get; set; }
         public string NumeroIdentificacion { get; set; }
         public DateTime FechaNacimiento { get; set; }
+        public int Edad() => DateTime.Today.Year - FechaNacimiento.Year - (DateTime.Today.DayOfYear < FechaNacimiento.DayOfYear ? 1 : 0);
         public int MunicipioNacimientoId { get; set; }
         public int SexoId { get; set; }
         public int TipoRegimenSSId { get; set; }
@@ -100,6 +102,13 @@ namespace Secani.Data.Models
         public string CuidadorTelefono { get; set; }
         public string SeguimientoLoDesea { get; set; }
         public string SeguimientoMotivoNoLoDesea { get; set; }
+    }
 
+    public class NNAConfiguration : IEntityTypeConfiguration<NNA>
+    {
+        public void Configure(EntityTypeBuilder<NNA> builder)
+        {
+
+        }
     }
 }

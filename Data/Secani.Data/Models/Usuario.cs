@@ -1,8 +1,9 @@
-﻿using Secani.Data.Common;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
 
 namespace Secani.Data.Models
 {
-    public class Usuario : BaseEntity
+    public class Usuario : _BaseEntity
     {
         public string Nombres { get; set; }
         public string Email { get; set; }
@@ -10,5 +11,13 @@ namespace Secani.Data.Models
         public int EstadoUsuarioId { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+    }
+
+    public class UsuarioConfiguration : IEntityTypeConfiguration<Usuario>
+    {
+        public void Configure(EntityTypeBuilder<Usuario> builder)
+        {
+
+        }
     }
 }
